@@ -1,0 +1,168 @@
+/* Extra small devices (phones, 600px and down) */
+/* Medium devices (landscape tablets, 767px and down) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and down) */
+/* Extra Large devices (laptops/desktops, 1200px and down) */
+/* width is between 992 and 119pxpx */
+/*NAVBAR */
+@media only screen and (min-width: 62rem) and (max-width: 75rem) {
+  .navbar-area {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 62rem) and (max-width: 75rem) {
+  .main-navbar {
+    padding: 0;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item a {
+    font-size: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu {
+    width: 16rem;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.25rem;
+  }
+  .main-navbar .navbar .others-options .option-item {
+    margin-right: 1rem;
+  }
+  .main-navbar .navbar .others-options .option-item .default_btn {
+    padding: 0.6rem 2.5rem 0.6rem 1.25rem;
+    font-size: 0.8rem;
+  }
+  .main-navbar .navbar .others-options .option-item .default_btn i {
+    right: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 62rem) {
+  .navbar-area {
+    -webkit-box-shadow: 0 0 0.6rem #ddd;
+            box-shadow: 0 0 0.6rem #ddd;
+  }
+}
+
+@media only screen and (max-width: 62rem) {
+  .main-navbar {
+    padding: 0;
+  }
+  .main-navbar .navbar .navbar-nav {
+    border-top: 0.06rem solid #eee;
+    overflow-y: auto;
+    max-height: 60vh;
+    margin-top: 0.6rem !important;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item {
+    margin: 0;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item a {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    margin-top: 0.6rem;
+    top: 0 !important;
+    border: 0.06rem solid #eee;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a {
+    padding: 0.5rem 0.06rem;
+    font-size: 0.9rem;
+  }
+  .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    width: 90%;
+    margin-top: 0.6rem;
+    top: 0 !important;
+    border: 0.06rem solid #eee;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    left: 1rem;
+  }
+  .main-navbar .navbar .others-options {
+    position: absolute;
+    right: 2.8rem;
+    top: 0.3rem;
+  }
+  .main-navbar .navbar .others-options .option-item {
+    margin-right: 0.6rem;
+  }
+  .main-navbar .navbar .others-options .option-item .default_btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    position: relative;
+    top: -0.2rem;
+  }
+}
+
+/*HERO SECTION */
+@media only screen and (max-width: 47.94rem) {
+  .hero-area .hero-content .hero-text h2 {
+    font-size: 2rem;
+  }
+}
+
+/*FILTER COMPONENTS */
+@media only screen and (max-width: 47.94rem) {
+  .filter_by_container .dropdown {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .filter_by_container .dropdown button {
+    margin-top: 1.6rem;
+  }
+}
+
+/*DASHBOARD */
+@media screen and (min-width: 48rem) {
+  .dash_header {
+    height: calc(3rem + 1rem);
+    padding: 0 2rem 0 calc(4.25rem + 2rem);
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .dash_container {
+    margin: calc(3rem + 1rem) 0 0 0;
+    padding-left: calc(4.25rem + 2rem);
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .review {
+    width: calc(4.25rem + 9.75rem);
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .add_body_padding {
+    padding-left: calc(4.25rem + 11.75rem);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .chart_area {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

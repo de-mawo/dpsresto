@@ -1,0 +1,222 @@
+@import "./variables";
+
+/* Extra small devices (phones, 600px and down) */
+@mixin smScreen {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and down) */
+@mixin mdScreen {
+  @media only screen and (max-width: 47.94rem) {
+    @content;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin mdScreenUp {
+  @media screen and (min-width: 48rem) {
+    @content;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@mixin lgScreen {
+  @media only screen and (max-width: 62rem) {
+    @content;
+  }
+}
+/* Extra Large devices (laptops/desktops, 1200px and down) */
+@mixin xlScreen {
+  @media only screen and (max-width: 72rem) {
+    @content;
+  }
+}
+
+/* width is between 992 and 119pxpx */
+@mixin btwnLgExLgScreen {
+  @media only screen and (min-width: 62rem) and (max-width: 75rem) {
+    @content;
+  }
+}
+
+/*NAVBAR */
+.navbar-area {
+  @include btwnLgExLgScreen() {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+}
+.main-navbar {
+  @include btwnLgExLgScreen() {
+    padding: 0;
+    .navbar {
+      .navbar-nav {
+        .nav-item {
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          a {
+            font-size: 1rem;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+          }
+          .dropdown-menu {
+            width: 16rem;
+            li {
+              a {
+                font-size: 0.9rem;
+                padding: 0.5rem 1.25rem;
+              }
+            }
+          }
+        }
+      }
+      .others-options {
+        .option-item {
+          margin-right: 1rem;
+          .default_btn {
+            padding: 0.6rem 2.5rem 0.6rem 1.25rem;
+            font-size: 0.8rem;
+            i {
+              right: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-area {
+  @include lgScreen() {
+    box-shadow: 0 0 0.6rem #ddd;
+  }
+}
+
+.main-navbar {
+  @include lgScreen() {
+    padding: 0;
+    .navbar {
+      .navbar-nav {
+        border-top: 0.06rem solid #eee;
+        overflow-y: auto;
+        max-height: 60vh;
+        margin-top: 0.6rem !important;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        .nav-item {
+          margin: 0;
+          a {
+            padding-top: 0.5rem;
+            font-size: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          .dropdown-menu {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+            margin-top: 0.6rem;
+            top: 0 !important;
+            border: 0.06rem solid #eee;
+            margin-top: 0;
+            margin-bottom: 0.6rem;
+            li {
+              a {
+                padding: 0.5rem 0.06rem;
+                font-size: 0.9rem;
+              }
+              .dropdown-menu {
+                position: relative;
+                opacity: 1;
+                visibility: visible;
+                width: 90%;
+                margin-top: 0.6rem;
+                top: 0 !important;
+                border: 0.06rem solid #eee;
+                margin-top: 0;
+                margin-bottom: 0.6rem;
+                left: 1rem;
+              }
+            }
+          }
+        }
+      }
+      .others-options {
+        position: absolute;
+        right: 2.8rem;
+        top: 0.3rem;
+        .option-item {
+          margin-right: 0.6rem;
+          .default_btn {
+            padding: 0.3rem 0.5rem;
+            font-size: 0.6rem;
+            position: relative;
+            top: -0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*HERO SECTION */
+
+.hero-area {
+  .hero-content {
+    .hero-text {
+      h2 {
+        @include mdScreen() {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/*FILTER COMPONENTS */
+.filter_by_container {
+  .dropdown {
+    @include mdScreen() {
+      justify-content: flex-start !important;
+      button {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+}
+
+/*DASHBOARD */
+
+.dash_header {
+  @include mdScreenUp() {
+    height: calc(3rem + 1rem);
+    padding: 0 2rem 0 calc(4.25rem + 2rem);
+  }
+}
+
+.dash_container {
+  @include mdScreenUp() {
+    margin: calc(3rem + 1rem) 0 0 0;
+    padding-left: calc(4.25rem + 2rem);
+  }
+}
+
+.review {
+  @include mdScreenUp() {
+    width: calc(4.25rem + 9.75rem);
+  }
+}
+
+.add_body_padding {
+  @include mdScreenUp() {
+    padding-left: calc(4.25rem + 11.75rem);
+  }
+}
+
+.chart_area {
+  @include smScreen(){
+    display: none;
+  }
+
+}
