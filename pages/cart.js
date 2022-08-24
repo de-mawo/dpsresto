@@ -16,10 +16,10 @@ const Cart = () => {
             <div className="container d-flex justify-content-center pb-70">
                 <main className="cart_area">
                     <div className="py-5 text-center">
-                        <Link href='/menu'> 
-                        <button className="w-100 main_btn text-center">
-                            <i className="ri-arrow-go-back-fill me-2"></i> Go Back to Add more{" "}
-                        </button>
+                        <Link href="/menu">
+                            <button className="w-100 secondary_btn text-center">
+                                <i className="ri-arrow-go-back-fill me-2"></i> Go Back to Add more{" "}
+                            </button>
                         </Link>
                         <h2 className="mt-5">Cart</h2>
                     </div>
@@ -34,7 +34,7 @@ const Cart = () => {
 
                     <hr className="my-4" />
                     <p>Delivery Address</p>
-                    <button className="outline w-100" data-bs-toggle="modal" data-bs-target="#currentLocationModal">
+                    <button className="secondary_btn w-100" data-bs-toggle="modal" data-bs-target="#currentLocationModal">
                         <i className="ri-map-pin-range-line"></i>
                         {address.substr(0, 20) + "..."} <strong>Change</strong>
                     </button>
@@ -90,7 +90,7 @@ const Cart = () => {
 
                     <div className="row">
                         <div className="col-2">
-                                <i className="ri-bank-card-fill"></i>
+                            <i className="ri-visa-fill fs-4"></i>
                         </div>
                         <div className="col-6"></div>
                         <div className="col-2">
@@ -107,8 +107,8 @@ const Cart = () => {
                         </div>
                     </form>
                     <hr className="my-3" />
-                    <button className="w-100 main_btn text-center ">
-                        Pay Now <i className="ri-wallet-3-fill"></i>
+                    <button className="w-100 secondary_btn text-center ">
+                        Pay Now <i className="ri-visa-line fs-5"></i>
                     </button>
                 </main>
             </div>

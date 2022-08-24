@@ -12,9 +12,9 @@ const TabContent = () => {
     return (
         <>
             <section className="food_tabs_area pt-100 pb-70 container">
-            <div className="pb-70 text-center">
-                        <h2>Delicious Meals on Promo</h2>
-                    </div>
+                <div className="pb-70 text-center">
+                    <h2>Delicious Meals on Promo</h2>
+                </div>
                 <div className="food_tabs">
                     <Tabs>
                         <TabList>
@@ -37,11 +37,26 @@ const TabContent = () => {
                                             <span>${meat.price}</span>
                                         </div>
                                         <ul className="list-inline list-unstyled">
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li> 
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
                                         </ul>
                                     </div>
                                 ))}
@@ -61,18 +76,33 @@ const TabContent = () => {
                                             <span>{seafood.price}</span>
                                         </div>
                                         <ul className="list-inline list-unstyled">
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li> 
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
                                         </ul>
                                     </div>
                                 ))}
                             </div>
                         </TabPanel>
-                        <TabPanel> 
-                        <div className="row  justify-content-center text-center">
+                        <TabPanel>
+                            <div className="row  justify-content-center text-center">
                                 {salads.map((salad) => (
                                     <div className="col-lg-3 col-md-6" key={salad.id}>
                                         <div className="image">
@@ -85,18 +115,33 @@ const TabContent = () => {
                                             <span>{salad.price}</span>
                                         </div>
                                         <ul className="list-inline list-unstyled">
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li> 
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
                                         </ul>
                                     </div>
                                 ))}
                             </div>
                         </TabPanel>
                         <TabPanel>
-                        <div className="row  justify-content-center text-center">
+                            <div className="row  justify-content-center text-center">
                                 {drinks.map((drink) => (
                                     <div className="col-lg-3 col-md-6" key={drink.id}>
                                         <div className="image">
@@ -109,16 +154,31 @@ const TabContent = () => {
                                             <span>{drink.price}</span>
                                         </div>
                                         <ul className="list-inline list-unstyled">
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li> 
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
-                                          <li className="list-inline-item"> <i className="ri-star-fill"></i></li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
+                                            <li className="list-inline-item">
+                                                {" "}
+                                                <i className="ri-star-fill"></i>
+                                            </li>
                                         </ul>
                                     </div>
                                 ))}
                             </div>
-                           </TabPanel>
+                        </TabPanel>
                     </Tabs>
                 </div>
             </section>

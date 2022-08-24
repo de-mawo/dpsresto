@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import menu from "../../data/food";
 import MenuModal from "./MenuModal";
 
 
-const MenuComponent = () => {
+const MenuComponent = ({data}) => {
     return (
         <>
             <main className="container mt-5 pb-70 ">
                 <div className="row justify-content-center text-center">
-                    {menu.map((item) => (                       
+                    {data.map((item) => (                       
                             <div className="col-lg-3 col-md-6" key={item.id}>
                                 <div className="menu_card_item" data-bs-toggle="modal" data-bs-target={`#${item.title}`.replace(/ +/g, "")}>
                                     <div className="image">
@@ -27,7 +26,7 @@ const MenuComponent = () => {
                     ))}
                 </div>
             </main>
-            <MenuModal menu={menu} />
+            <MenuModal data={data} /> 
         </>
     );
 };

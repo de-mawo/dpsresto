@@ -43,19 +43,17 @@ const Charts = () => {
                     </div>
                 </div>
 
-                <div className='chart_area'>               
-                <ResponsiveContainer>
-                    <LineChart  data={data}>
-                    {/* <CartesianGrid strokeDasharray="3 3" /> */}
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Line type='monotone' dataKey='New_Sales' stroke='#7431F9'/>
-                        <Line type='monotone' dataKey='Recurring' stroke='#FF414B' strokeDasharray="3 4 5 2"/>
-                    </LineChart>
-                </ResponsiveContainer>
+                <div className="chart_area">
+                    <ResponsiveContainer>
+                        <LineChart data={data}>
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Line type="monotone" dataKey="New_Sales" stroke="#7431F9" />
+                            <Line type="monotone" dataKey="Recurring" stroke="#FF414B" strokeDasharray="3 4 5 2" />
+                        </LineChart>
+                    </ResponsiveContainer>
                 </div>
-
             </div>
         </>
     );

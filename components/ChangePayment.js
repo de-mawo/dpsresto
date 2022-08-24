@@ -19,12 +19,12 @@ const ChangePayment = () => {
                         <div className="modal-body">
                             <div className="row">
                                 <div className="col-2">
-                                    <i className="ri-bank-card-fill"></i> 
+                                <i className="ri-visa-line fs-4 fw-bold"></i>
                                 </div>
                                 <div className="col-6"></div>
                                 <div className="col-2">
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="cardPayment" />
+                                        <input className="form-check-input" type="checkbox"  />
                                     </div>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@ const ChangePayment = () => {
                                 <div className="col-6"></div>
                                 <div className="col-2">
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="cardPayment" />
+                                        <input className="form-check-input" type="checkbox" />
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Link from "../utils/ActiveLink";
+import Link from "next/link";
 import Image from "next/image";
 import SideBar from "./SideBar";
 
@@ -52,7 +52,7 @@ const NavBar = () => {
                             <div className={menu ? "collapse navbar-collapse" : "collapse navbar-collapse show"} id="navbarSupportedContent">
                                 <ul className="navbar-nav m-auto">
                                     <li className="nav-item">
-                                        <Link href="/" activeClassName="active">
+                                        <Link href="/" >
                                             <a className="nav-link">Home</a>
                                         </Link>
                                     </li>
@@ -64,17 +64,16 @@ const NavBar = () => {
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link href="/track-order" activeClassName="active">
+                                        <Link href="/track-order" >
                                             <a className="nav-link">Track-Order</a>
                                         </Link>
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link href="/cart" activeClassName="active">
+                                        <Link href="/cart" >
                                             <div className="cart_btn">
                                                 <a className="nav-link ">
                                                     <i className="ri-shopping-cart-2-fill "></i>
-                                                    {/* <span>0</span> */}
                                                 </a>
                                             </div>
                                         </Link>

@@ -1,28 +1,6 @@
 import React from 'react'
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-const MySwal = withReactContent(Swal)
+import { DeleteAlert } from '../utils/Alert';
 
-const alertContent = () => {
-    MySwal.fire({
-        title: 'Delete this item from Cart',
-        text: "You won't be able to revert this!",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#1d1d1d",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!",
-        }).then((result) => {
-            if (result.isConfirmed) {
-              Swal.fire(
-                'Deleted!',
-                'The item has been deleted',
-                'success'
-              )
-            }
-          })
-}
-       
        
 
 const CartItem = ({ item }) => {
@@ -54,7 +32,7 @@ const CartItem = ({ item }) => {
                 </div>
                 <div className="col-1 delete_btn">
                     <i
-                    onClick={alertContent}
+                    onClick={() => DeleteAlert("Item")}
                         className="ri-delete-bin-5-line "                       
                     ></i>
                 </div>

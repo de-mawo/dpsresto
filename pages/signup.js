@@ -38,7 +38,7 @@ const SignUp = () => {
                             <input type="password" className="form-control" name="conf_password" />
                             <label htmlFor="conf_password">Confirm Password</label>
                         </div>
-                        <button className="w-100 default_btn" type="submit">
+                        <button className="w-100 primary_btn" type="submit">
                             SignUp
                         </button>
 
@@ -54,7 +54,7 @@ const SignUp = () => {
 
                         <div className="mt-5 mb-3 text-center">
                             <p className="text-muted">
-                                &copy; {Year}
+                                &copy; {Year} {" "}
                                 <Link href="/">
                                     <a>
                                         <strong>DPS Resto: Home </strong>

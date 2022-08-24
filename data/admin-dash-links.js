@@ -34,13 +34,8 @@ const Adminlinks = [
         i_class: "ri-chat-3-line",
         title: "Notifications",
         id: 5
-    },
-    {
-        url: "/admin/settings",
-        i_class: "ri-settings-5-line",
-        title: "Settings",
-        id: 6
-    },
+    }
+    
 ]
 
 export default Adminlinks;

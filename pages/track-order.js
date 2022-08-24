@@ -35,7 +35,7 @@ const TrackOrder = () => {
                           </li>
                       </ul>
                       <Link href="/menu">
-                      <a  className="ms-5 mb-3 main_btn">
+                      <a  className="ms-5 mb-3 secondary_btn">
                           {" "}
                           Order More
                       </a>

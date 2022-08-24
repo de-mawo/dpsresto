@@ -8,13 +8,13 @@ const Filter = () => {
             <section className="filter_by_container container">
                 <div className="row">
                     <div className=" col-md-6 ">
-                        <button className="outline " data-bs-toggle="modal" data-bs-target="#currentLocationModal">
+                        <button className="outline_btn " data-bs-toggle="modal" data-bs-target="#currentLocationModal">
                             <i className="ri-map-pin-range-line"></i>
                             {address.substr(0, 20) + "..."} <strong>Change</strong>
                         </button>
                     </div>
                     <div className="dropdown col-md-6 d-flex ">
-                        <button className="outline  dropdown-toggle" type="button" id="sortBy" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button className="outline_btn  dropdown-toggle" type="button" id="sortBy" data-bs-toggle="dropdown" aria-expanded="false">
                             Default Sorting
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="sortBy">
@@ -43,7 +43,7 @@ const Filter = () => {
                 </div>
             </section>
 
-            <ChangeAddressModal/>
+            <ChangeAddressModal />
         </>
     );
 };

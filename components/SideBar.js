@@ -1,78 +1,83 @@
-import React from 'react';
-import Link from '../utils/ActiveLink';
-import Image from 'next/image'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const SideBar = () => {
-  return (
-    <>
-    {/* Sidebar Modal */}
-    <div className='sidebarModal modal left'  id='mainSideBar'>
+    return (
+        <>
+            {/* Sidebar Modal */}
+            <div className="sidebarModal modal left" id="mainSideBar">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <button type="button" className="close" data-bs-dismiss="modal">
-                            <i className='ri-close-line'></i>
+                            <i className="ri-close-line"></i>
                         </button>
 
                         <div className="modal-body">
                             <div className="title">
                                 <Link href="/">
                                     <a className="d-inline-block">
-                                    <Image src="/img/logo.svg" alt="logo" width={110} height={36} />
+                                        <Image src="/img/logo.svg" alt="logo" width={110} height={36} />
                                     </a>
                                 </Link>
                             </div>
 
                             <div className="sidebar-content text-center">
-                            <div className="sidebar-btn">
+                                <div className="sidebar-btn">
                                     <Link href="/signup">
-                                        <button className="default_btn" data-bs-dismiss="modal">
+                                        <button className="primary_btn" data-bs-dismiss="modal">
                                             Sign up
                                         </button>
                                     </Link>
                                 </div>
 
                                 <div className="sidebar-btn">
-                                    <Link href="/login" >
+                                    <Link href="/login">
                                         <button className="light_btn" data-bs-dismiss="modal">
                                             Login
                                         </button>
                                     </Link>
-                                </div>     
+                                </div>
 
-                                 <div className="sidebar-btn mt-5"> 
-                            <Link href="/admin">
+                                <div className="sidebar-btn mt-5">
+                                    <Link href="/my-account">
+                                        <span className="admin_link" data-bs-dismiss="modal">
+                                            My Account
+                                        </span>
+                                    </Link>
+                                </div>
+
+                                <div className="sidebar-btn mt-3">
+                                    <Link href="/admin">
                                         <span className="admin_link" data-bs-dismiss="modal">
                                             Admin Portal
                                         </span>
                                     </Link>
-                                    </div>                           
-
+                                </div>
                             </div>
 
-                           
-
-                            <div className="sidebar-contact-info">
+                            <div className="sidebar_contact_info">
                                 <h3>DPS Resto</h3>
 
                                 <ul className="info-list">
                                     <li>
-                                        <i className="ri-phone-fill"></i> 
+                                        <i className="ri-phone-fill"></i>
                                         <a href="tel:+11234567890">+44 (28) 523 1212</a>
-                                    </li>
-                                    
-                                    <li>
-                                        <i className="ri-mail-line"></i> 
-                                        <a href="mailto:hello@ozen.com">info@dpsresto.com</a>
                                     </li>
 
                                     <li>
-                                        <i className="ri-map-pin-line"></i> 
+                                        <i className="ri-mail-line"></i>
+                                        <a href="mailto:info@dpsresto.com">info@dpsresto.com</a>
+                                    </li>
+
+                                    <li>
+                                        <i className="ri-map-pin-line"></i>
                                         15 Bertram Road, Sea Point <br /> 8005, New York.
                                     </li>
                                 </ul>
                             </div>
 
-                            <ul className="sidebar-social-list">
+                            <ul className="sidebar_social_list">
                                 <li>
                                     <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                                         <i className="ri-facebook-fill"></i>
@@ -99,9 +104,8 @@ const SideBar = () => {
                 </div>
             </div>
             {/* End Sidebar Modal */}
-    
-    </>
-  )
-}
+        </>
+    );
+};
 
-export default SideBar
+export default SideBar;

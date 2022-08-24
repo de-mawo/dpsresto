@@ -32,8 +32,14 @@
     @content;
   }
 }
+/* width is between 768 and 991px */
+@mixin btwnMdLgScreen {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
 
-/* width is between 992 and 119pxpx */
+/* width is between 992 and 119px */
 @mixin btwnLgExLgScreen {
   @media only screen and (min-width: 62rem) and (max-width: 75rem) {
     @content;
@@ -162,7 +168,7 @@
 
 /*HERO SECTION */
 
-.hero-area {
+.hero_area {
   .hero-content {
     .hero-text {
       h2 {
@@ -170,6 +176,20 @@
           font-size: 2rem;
         }
       }
+    }
+  }
+}
+
+/*CONTACT PAGE */
+.contact_info_area {
+  .contact_address {
+    @include mdScreen() {
+      padding: 2.2rem 1.25rem;
+      margin-bottom: 1.9rem;
+    }
+    @include btwnMdLgScreen() {
+      padding: 2.2rem 1.25rem;
+      margin-bottom: 1.9rem;
     }
   }
 }
@@ -215,8 +235,9 @@
 }
 
 .chart_area {
-  @include smScreen(){
+  @include smScreen() {
     display: none;
   }
-
 }
+
+

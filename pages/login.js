@@ -30,7 +30,7 @@ const Login = () => {
                                 <input type="checkbox" /> Remember me
                             </label>
                         </div>
-                        <button className="w-100 default_btn" type="submit">
+                        <button className="w-100 primary_btn" type="submit">
                             Sign in
                         </button>
 
@@ -55,7 +55,7 @@ const Login = () => {
 
                         <div className="mt-5 mb-3 text-center">
                             <p className="text-muted">
-                                &copy; {Year}
+                                &copy; {Year} {" "}
                                 <Link href="/">
                                     <a>
                                         <strong>DPS Resto: Home </strong>

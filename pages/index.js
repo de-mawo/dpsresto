@@ -1,4 +1,4 @@
-import Banner from "../components/Banner";
+import Hero from "../components/Hero";
 import CTA from "../components/CTA";
 import EnterAddress from "../components/EnterAddress";
 import Footer from "../components/Footer";
@@ -11,8 +11,10 @@ const Home = () => {
         <>
             <MetaSeo title={`DPS | Home`} />
             <NavBar />
-            <Banner />
+            <Hero />
+            <div className="pt-100">
             <EnterAddress />
+            </div>
             <TabContent />
             <CTA />
             <Footer />

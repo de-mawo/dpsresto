@@ -18,7 +18,7 @@ const PasswordReset = () => {
                                 <input type="email" className="form-control" name="email" />
                                 <label htmlFor="email">Enter Your Email</label>
                             </div>
-                            <button className="w-100 default_btn" type="submit">
+                            <button className="w-100 primary_btn" type="submit">
                                 Submit
                             </button>
                         </form>

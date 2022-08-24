@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Image from 'next/image'
 
-const MenuModal = ({menu}) => {
+const MenuModal = ({data}) => {
     const [extraPrice, setExtraPrice] = useState(0);
 
 
@@ -18,11 +18,11 @@ const MenuModal = ({menu}) => {
         }
     };
 
-
+ 
   return (
     <>
    
-    {menu.map((item) => (
+    {data.map((item) => (
         <div className="menuModal modal fade" id={item.title.replace(/ +/g, "")} tabIndex="-1" aria-labelledby="fooditemLabel" aria-hidden="true" key={item.id}>
             <div className="modal-dialog ">
                 <div className="modal-content">
@@ -172,7 +172,7 @@ const MenuModal = ({menu}) => {
                     </div>
 
                     <div className="modal-footer justify-content-center">
-                        <button type="button" className="main_btn" data-bs-dismiss="modal" >
+                        <button type="button" className="secondary_btn" data-bs-dismiss="modal" >
                             Add to Cart : ${item.price + extraPrice}
                         </button>
                     </div>

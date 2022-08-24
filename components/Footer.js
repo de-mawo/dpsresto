@@ -29,7 +29,7 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-menu col-lg-3 col-md-6 col-sm-12 text-center">
-                            <h3 >Quick Links</h3>
+                            <h3>Quick Links</h3>
                             <ul className="list-unstyled">
                                 <li>
                                     <Link href="/login">Login</Link>
@@ -37,32 +37,32 @@ const Footer = () => {
                                 <li>
                                     <Link href="/sign-up">Sign up</Link>
                                 </li>
+                                <li>
+                                    <Link href="/admin">Admin Portal</Link>
+                                </li>
                             </ul>
                         </div>
 
                         <div className=" footer-menu col-lg-3 col-md-6 col-sm-12 text-center">
-                            <h3 >Get Food</h3>
+                            <h3>My Food</h3>
                             <ul className="list-unstyled">
                                 <li>
                                     <Link href="/track-order">Track Order</Link>
                                 </li>
                                 <li>
-                                    <Link href="/locations">Our Locations</Link>
+                                    <Link href="/my-account">My Account</Link>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="footer-menu col-lg-3 col-md-6 col-sm-12 text-center">
-                            <h3 >About DPS</h3>
+                            <h3>About DPS</h3>
                             <ul className="list-unstyled">
                                 <li>
-                                    <Link href="/about-us">About Us</Link>
+                                    <Link href="/contact-us">Contact Us</Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">Contact Us</Link>
-                                </li>
-                                <li>
-                                    <Link href="/support">Support</Link>
+                                    <Link href="/contact-us">Support</Link>
                                 </li>
                             </ul>
                         </div>
@@ -104,9 +104,6 @@ const Footer = () => {
                             <li className="list-inline-item">
                                 <Link href="/terms-of-service">Terms of Service</Link>
                             </li>
-                            <li className="list-inline-item">
-                                <Link href="/pricing">Pricing</Link>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -122,6 +119,5 @@ const Footer = () => {
         </>
     );
 };
-
 
 export default Footer;
