@@ -1,6 +1,12 @@
 ## Introduction
 DPS Resto is a simple react nextjs  template for a restaurant. It is designed with only the necessary components and pages that are needed for the real world scenarios. The data, email addresses ,domain names and physical addresses  used in this template are fictitious and are intended for simulation purposes only. 
 
+## Demo APP
+https://dpsresto.vercel.app/
+
+## Demo Video
+https://youtu.be/Zz3D91gFuv0
+
 ## Installation
 - ### Prerequisites
 1. Nodejs v16.13+ (Recommended Version: any version greater or equal to 14.16+). 

@@ -30,4 +30,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# custom development files
 Documentation.md.backup

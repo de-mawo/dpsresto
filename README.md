@@ -1,3 +1,3 @@
 ## Installation
 
-1. Unzip the folder containing the files in the directory specified.
+1. Read the Documentation.md doc 
