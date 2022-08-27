@@ -35,7 +35,7 @@ const Footer = () => {
                                     <Link href="/login">Login</Link>
                                 </li>
                                 <li>
-                                    <Link href="/sign-up">Sign up</Link>
+                                    <Link href="/signup">Sign up</Link>
                                 </li>
                                 <li>
                                     <Link href="/admin">Admin Portal</Link>
