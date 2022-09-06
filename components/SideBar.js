@@ -14,13 +14,6 @@ const SideBar = () => {
                         </button>
 
                         <div className="modal-body">
-                            <div className="title">
-                                <Link href="/">
-                                    <a className="d-inline-block">
-                                        <Image src="/img/logo.svg" alt="logo" width={110} height={36} />
-                                    </a>
-                                </Link>
-                            </div>
 
                             <div className="sidebar-content text-center">
                                 <div className="sidebar-btn">
